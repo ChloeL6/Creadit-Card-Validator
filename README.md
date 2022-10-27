@@ -42,5 +42,5 @@ Test5: Choose every other number in inputted string
 Code: 
 num = "3589"
 cardValidator();
-Expected Output: [3, 1]; 
+Expected Output: [3, 1, ]; 
 ```

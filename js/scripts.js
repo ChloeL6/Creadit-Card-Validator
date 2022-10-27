@@ -50,3 +50,17 @@ function cardValidator(num) {
 // num = "35"
 // cardValidator();
 // Expected Output: [3, 1]; 
+
+const num = "35";
+
+function cardValidator(num) {
+  const numArray = num.split("");
+  let newArray = numArray.map(Number);
+  newArray[1] *= 2;
+
+  if (newArray[1] >= 10) {
+    let stringNum = newArray[1].toString();
+    newArray[1] = Number(stringNum[0]) + Number(stringNum[1]);
+  }
+  return newArray;
+} 
