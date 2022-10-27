@@ -10,7 +10,7 @@
 5. If the number does NOT end in a zero, the card number is NOT valid. In our case, the credit card number is NOT valid.
 
 A valid number: 4102080860435620
-An invalid number: 4102 0808 8043 5621
+An invalid number: 4102080880435621
 ```
 Describe: cardValidator();
 
@@ -50,9 +50,15 @@ num = "4102080860435620"
 cardValidator();
 Expected Output: 50; 
 
-Test6: Get the sum of inputted numbers
+Test7: If last number of sum is 0
 Code: 
 num = "4102080860435620"
 cardValidator();
-Expected Output: 50; 
+Expected Output: "valid";
+
+Test8: If last number of sum is NOT 0
+Code: 
+num: "4102080880435621"
+cardValidator();
+Expected Output: -1;
 ```
