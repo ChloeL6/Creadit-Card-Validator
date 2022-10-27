@@ -40,7 +40,14 @@ Expected Output: [3, 1];
 
 Test5: Choose every other number in inputted string
 Code: 
-num = "3589"
+num = "3587"
 cardValidator();
-Expected Output: [3, 1, ]; 
+Expected Output: [3, 1, 8, 5]; 
+
+Test6: Choose every other number in inputted string
+Code: 
+num = "4102080860435620"
+cardValidator();
+Expected Output: [3, 1, 8, 5]; 
+
 ```
