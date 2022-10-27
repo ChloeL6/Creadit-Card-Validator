@@ -40,14 +40,19 @@ Expected Output: [3, 1];
 
 Test5: Choose every other number in inputted string
 Code: 
-num = "3587"
+num = "4102080860435620"
 cardValidator();
-Expected Output: [3, 1, 8, 5]; 
+Expected Output: [4,2,0,4,0,7,0,7,6,0,4,6,5,3,2,0]; 
 
-Test6: Choose every other number in inputted string
+Test6: Get the sum of inputted numbers
 Code: 
 num = "4102080860435620"
 cardValidator();
-Expected Output: [3, 1, 8, 5]; 
+Expected Output: 50; 
 
+Test6: Get the sum of inputted numbers
+Code: 
+num = "4102080860435620"
+cardValidator();
+Expected Output: 50; 
 ```

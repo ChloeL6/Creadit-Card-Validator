@@ -67,17 +67,16 @@ function cardValidator(num) {
 
 // Test5: Choose every other number in inputted string
 // Code: 
-// num = "3587"
+// num = "4102080860435620"
 // cardValidator();
-// Expected Output: [4,2,0,4,0,7,0,7,6,0,4,6,53,20]; 
-newAr = [3, 5, 8, 7]
+// Expected Output: [4,2,0,4,0,7,0,7,6,0,4,6,5,3,2,0]; 
 
 const num = "4102080860435620";
 
 function cardValidator(num) {
   const numAr = num.split("");
   let newAr = numAr.map(Number);
-
+  
   for (let i = 1; i < num.length ; i+=2) {
     newAr[i] *= 2;
     if (newAr[i] >= 10) {
@@ -85,7 +84,27 @@ function cardValidator(num) {
       newAr[i] = Number(stringNum[0]) + Number(stringNum[1]);
     }
   }
-  return newAr;
-} 
+  let sumAr = newAr.reduce((previousNum, currentNum) => previousNum + currentNum);
+  return sumAr;
+}
 
-[4204 0707 6046 5320]
+// Test6: Get the sum of inputted numbers
+// Code: 
+// num = "4102080860435620"
+// cardValidator();
+// Expected Output: 50; const num = "4102080860435620";
+
+function cardValidator(num) {
+  const numAr = num.split("");
+  let newAr = numAr.map(Number);
+  
+  for (let i = 1; i < num.length ; i+=2) {
+    newAr[i] *= 2;
+    if (newAr[i] >= 10) {
+      let stringNum = newAr[i].toString();
+      newAr[i] = Number(stringNum[0]) + Number(stringNum[1]);
+    }
+  }
+  let sumAr = newAr.reduce((previousNum, currentNum) => previousNum + currentNum);
+  return sumAr;
+}
