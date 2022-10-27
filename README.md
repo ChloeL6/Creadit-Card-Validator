@@ -60,5 +60,5 @@ Test8: If last number of sum is NOT 0
 Code: 
 num: "4102080880435621"
 cardValidator();
-Expected Output: -1;
+Expected Output: "invalid";
 ```

@@ -138,4 +138,25 @@ function cardValidator(num) {
 // Code: 
 // num: "4102080880435621"
 // cardValidator();
-// Expected Output: -1;
+// Expected Output: "invalid";
+
+const num = "4102080880435621"
+
+function cardValidator(num) {
+  const numAr = num.split("");
+  let newAr = numAr.map(Number);
+  
+  for (let i = 1; i < num.length ; i+=2) {
+    newAr[i] *= 2;
+    if (newAr[i] >= 10) {
+      let stringNum = newAr[i].toString();
+      newAr[i] = Number(stringNum[0]) + Number(stringNum[1]);
+    }
+  }
+  let sumAr = newAr.reduce((previousNum, currentNum) => previousNum + currentNum);
+  if (sumAr % 10 === 0) {
+    return "valid";
+  } else {
+    return "invalid";
+  }
+}
